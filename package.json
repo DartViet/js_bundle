@@ -1,0 +1,17 @@
+{
+  "name": "ltd_bundle",
+  "version": "1.0.0",
+  "description": "Big App for Medical",
+  "workspaces": [
+    "ltd_bundle",
+    "ltd_web_app"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --workspaces ltd_bundle",
+    "web": "cd ltd_web_app && npm install && npm run dev && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dao Ngo",
+  "license": "UNLICENSED"
+}

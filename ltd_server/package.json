@@ -1,0 +1,19 @@
+{
+  "name": "ltd_server",
+  "version": "1.0.0",
+  "description": "LTD fastify server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dao Ngo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-jsdoc": "^50.6.6"
+  }
+}

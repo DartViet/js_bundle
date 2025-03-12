@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Big App for Medical",
   "workspaces": [
+    "ltd_server",
     "ltd_bundle",
     "ltd_web_app"
   ],
   "main": "index.js",
   "scripts": {
-    "server": "npm run dev --workspaces ltd_bundle",
+    "server": "cd ltd_server && npm install && npm run dev && cd ..",
     "web": "cd ltd_web_app && npm install && npm run dev && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

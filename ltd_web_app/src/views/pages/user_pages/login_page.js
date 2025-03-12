@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit'
-import { BulmaStyles } from '../../assets/bulma';
+import { BulmaStyles } from '../../../assets/bulma';
 
 /**
  * An example element.

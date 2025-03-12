@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "LTD fastify server",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run lint && node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js"
   },
   "author": "Dao Ngo",
   "license": "UNLICENSED",
   "dependencies": {
+    "@fastify/routes": "^6.0.2",
     "fastify": "^5.2.1"
   },
   "devDependencies": {

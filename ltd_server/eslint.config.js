@@ -21,6 +21,7 @@ export default defineConfig([
             globals: {
                 window: 'readonly',
                 document: 'readonly',
+                process: 'readonly',
                 customElements: 'readonly',
                 HTMLElement: 'readonly'
             }

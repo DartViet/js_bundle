@@ -1,10 +1,10 @@
 import { LitElement, css, html } from 'lit'
 import { Router} from '@lit-labs/router';
-import './pages/user_pages/login_page.js';
-import './pages/user_pages/sign_up_page.js';
-import './pages/user_pages/user_information.js';
-import './pages/not_found.js';
-import './pages/user_pages/forgot_password.js';
+import './views/pages/user_pages/login_page.js';
+import './views/pages/user_pages/sign_up_page.js';
+import './views/pages/user_pages/user_information.js';
+import './views/pages/not_found.js';
+import './views/pages/user_pages/forgot_password.js';
 
 /**
  * An example element.

@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import { BulmaStyles } from '../../assets/bulma';
+import { BulmaStyles } from '../../../assets/bulma';
 
 export class ForgotPage extends LitElement{
     constructor(){

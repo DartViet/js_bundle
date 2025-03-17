@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { BulmaStyles } from '../../../assets/bulma';
+import '../../menu.js'
 
 export class ForgotPage extends LitElement{
     constructor(){
@@ -13,6 +14,7 @@ export class ForgotPage extends LitElement{
 
     render(){
         return html`
+            <menu-page></menu-page>
             <section class="section">
                 <div class="container">
                     <div class="columns is-centered">

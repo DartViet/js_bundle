@@ -1,5 +1,6 @@
 import { html, LitElement } from "lit";
 import { BulmaStyles } from "../../../assets/bulma";
+import "../../menu.js";
 
 class UserInformation extends LitElement{
     static get styles(){
@@ -14,6 +15,7 @@ class UserInformation extends LitElement{
 
     render(){
         return html`
+            <menu-page></menu-page>
     <section class="section">
         <div class="container">
             <h1 class="title">User Information Form</h1>

@@ -5,6 +5,8 @@ import './views/pages/user_pages/sign_up_page.js';
 import './views/pages/user_pages/user_information.js';
 import './views/pages/not_found.js';
 import './views/pages/user_pages/forgot_password.js';
+import './views/pages/visits/patient_search.js';
+import './views/pages/visits/patient_info.js';
 
 /**
  * An example element.
@@ -12,6 +14,7 @@ import './views/pages/user_pages/forgot_password.js';
 export class MyElement extends LitElement {
   static get properties() {
     return {
+      
     }
   }
 
@@ -32,7 +35,7 @@ export class MyElement extends LitElement {
 
       {
         name: 'Login',
-        path: '/login',
+        path: '/login-page',
         render: () => html`<login-page></login-page>`
       },
       {
@@ -45,6 +48,17 @@ export class MyElement extends LitElement {
         path: '/signup',
         render: () => html`<sign-up-page></sign-up-page>`
       },
+      {
+        name: 'Patient Search',
+        path: '/patient-search',
+        render: () => html`<patient-search></patient-search>`
+      },
+      {
+        name: 'Patient Info',
+        path: '/patient-info/:id',
+        render: ({id}) => html`<patient-info .patientId=${id}></patient-info>`
+      },
+
       {
         name: '404',
         path: '/*',
